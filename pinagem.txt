@@ -1,0 +1,70 @@
+// -------------------------------------------------------------------------
+// Mapeamento de Pinos - COM INDICADOR "P A"
+// -------------------------------------------------------------------------
+
+    clk             =   clk_3hz;
+    blk             =   segd0.dp_on;
+
+// Mapeamento do Display 0 (Número do andar)
+    dp7_0[0]        =   segd0.g_on;
+    dp7_0[1]        =   segd0.f_on;
+    dp7_0[2]        =   segd0.e_on;
+    dp7_0[3]        =   segd0.d_on;
+    dp7_0[4]        =   segd0.c_on;
+    dp7_0[5]        =   segd0.b_on;
+    dp7_0[6]        =   segd0.a_on;
+
+// Mapeamento do Display 1 (Letra 'A' do andar)
+    dp7_1[0]        =   segd1.g_on;
+    dp7_1[1]        =   segd1.f_on;
+    dp7_1[2]        =   segd1.e_on;
+    dp7_1[3]        =   segd1.d_on;
+    dp7_1[4]        =   segd1.c_on;
+    dp7_1[5]        =   segd1.b_on;
+    dp7_1[6]        =   segd1.a_on;
+
+// Mapeamento do Display 2 (Letra 'A' de Porta Aberta)
+    dp7_2[0]        =   segd2.g_on;
+    dp7_2[1]        =   segd2.f_on;
+    dp7_2[2]        =   segd2.e_on;
+    dp7_2[3]        =   segd2.d_on;
+    dp7_2[4]        =   segd2.c_on;
+    dp7_2[5]        =   segd2.b_on;
+    dp7_2[6]        =   segd2.a_on;
+
+// Mapeamento do Display 3 (Letra 'P' de Porta Aberta)
+    dp7_3[0]        =   segd3.g_on;
+    dp7_3[1]        =   segd3.f_on;
+    dp7_3[2]        =   segd3.e_on;
+    dp7_3[3]        =   segd3.d_on;
+    dp7_3[4]        =   segd3.c_on;
+    dp7_3[5]        =   segd3.b_on;
+    dp7_3[6]        =   segd3.a_on;
+
+// ==========================================
+// ORDEM DOS LEDs (Atuadores)
+// ==========================================
+    cmd_abre_1      =   led0; // Porta 1 Abrindo (Alinhado com sw0)
+    cmd_abre_2      =   led1; // Porta 2 Abrindo (Alinhado com sw1)
+    cmd_abre_3      =   led2; // Porta 3 Abrindo (Alinhado com sw2)
+    cmd_fecha_1     =   led3; // Porta 1 Fechando
+    cmd_fecha_2     =   led4; // Porta 2 Fechando
+    cmd_fecha_3     =   led5; // Porta 3 Fechando
+    motor_sobe      =   led6; // Motor Subindo
+    motor_desce     =   led7; // Motor Descendo
+
+// Botões de Chamada (Entradas nos Push-Buttons)
+    btn_1           =   btn0;
+    btn_2           =   btn1;
+    btn_3           =   btn2;
+
+// Sensores de Posição e Portas (Entradas nas Chaves/Switches)
+    fc_1            =   sw0;
+    fc_2            =   sw1;
+    fc_3            =   sw2;
+    sens_aberta_1   =   sw3;
+    sens_aberta_2   =   sw4;
+    sens_aberta_3   =   sw5;
+    sens_fechada_1  =   sw6;
+    sens_fechada_2  =   sw7;
+    sens_fechada_3  =   sw8;
